@@ -31,16 +31,24 @@ endif;
 array_shift($url);
 $args = $url;
 
-include 'functions.php';
+// include 'functions.php';
 
-$data = [];
+// $data = [];
 
-if(function_exists($file)){
-	$data = call_user_func($file);
+// if(function_exists($file)){
+// 	$data = call_user_func($file);
+// }
+
+// LOAD THE CONTROLLER
+if(file_exists('app/controllers/' . $file . '.php')){
+	require 'app/controllers/' . $file . '.php';
 }
 
-if(file_exists($file . '.php')){
-	require $file . '.php';
+
+// LOAD THE VIEW
+
+if(file_exists('app/views/' . $file . '.php')){
+	require 'app/views/' . $file . '.php';
 } else {
-	require '404.php';
+	require 'app/views/404.php';
 }

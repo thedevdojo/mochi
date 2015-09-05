@@ -1,11 +1,11 @@
-<?php include('header.php'); ?>
+<?php include('partials/header.php'); ?>
 
-	<?php if( !empty($data['id']) ): ?>
+	<?php if( $user ): ?>
 
-		<br />Welcome <?= $data['email']; ?> 
+		<br />Welcome <?= $user['email']; ?> 
 		<br /><br />You are successfully logged in!
 		<br /><br />
-		<a href="logout.php">Logout?</a>
+		<a href="logout">Logout?</a>
 
 	<?php else: ?>
 
@@ -15,4 +15,4 @@
 
 	<?php endif; ?>
 
-<?php include('footer.php'); ?>
+<?php include('partials/footer.php'); ?>

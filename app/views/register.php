@@ -1,4 +1,4 @@
-<?php include('header.php'); ?>
+<?php include('partials/header.php'); ?>
 
 	<?php if(!empty($message)): ?>
 		<p><?= $message ?></p>
@@ -16,4 +16,4 @@
 
 	</form>
 
-<?php include('footer.php'); ?>
+<?php include('partials/footer.php'); ?>

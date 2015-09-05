@@ -3,7 +3,7 @@
 <head>
 	<title>Welcome to your Web App</title>
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,900' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="app/views/assets/css/style.css">
 </head>
 <body>
 
